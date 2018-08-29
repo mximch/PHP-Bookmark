@@ -1,0 +1,24 @@
+首页login.php
+调用文件合集
+调用页眉页脚
+使用out_fns.php中
+do_html_header()、display_site_info()、display_login_form、do_html_footer()
+
+文件合集bookmark_fns.php
+1.每个函数存放于不同的文件，模块化
+2.大部分脚本都需要这些函数页面，每个脚本包含一个文件比包含五个更简洁
+
+output_fns.php负责输出页面 包含
+页眉 页脚函数
+
+
+新用户注册页面register_form.php 包含
+新用户注册验证脚本register_new.php 包含
+用户输入数据有效性函数data_valid_fns.php中
+filled_out()检查表单是否完整填写
+valid_email()邮件地址是否有效
+||||
+写入数据库register()函数在user_auth_fns.php中
+|||
+连接数据库db_connect()函数在db_fns.php中
+
